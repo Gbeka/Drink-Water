@@ -10,12 +10,15 @@ const glass8 = document.getElementById("little-glass-8");
 const remained = document.getElementById("remained");
 const percent = document.getElementById("percent");
 
+remained.classList.add("nullL")
+
+
+
+
 
 glass1.addEventListener("click", function () {
 
-
-    remained.classList.remove("hide-text");
-
+ remained.classList.remove("hide-text");
 
     glass1.classList.toggle("active");
     percent.classList.toggle("active-1");
@@ -62,6 +65,15 @@ glass1.addEventListener("click", function () {
     percent.classList.remove("active-8");
     percent.classList.remove("active-8-bg");
     remained.classList.remove("active-remained8")
+
+
+    if(glass1.classList.contains("active")){
+        remained.classList.remove("nullL")
+    }
+    else {
+        remained.classList.add("nullL")
+    }
+      
 
 });
 
@@ -302,5 +314,7 @@ glass8.addEventListener("click", function () {
 
     }
 });
+
+
 
 

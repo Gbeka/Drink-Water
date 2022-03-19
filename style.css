@@ -3,7 +3,7 @@
   justify-content: center;
   margin: auto;
   max-width: 500px;
-  background-color: #caf0f8;
+  /* background-color: #caf0f8; */
 }
 
 .title {
@@ -72,10 +72,23 @@
   width: 50px;
   height: 100px;
   margin: 5px;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
+  font-size: 20px;
+  font-weight: 800;
+  color: #023e8a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
+
+
+
+
+
 
 .active {
   background-color: #48cae4;
@@ -88,8 +101,12 @@
 .active-1-bg {
   margin-top: 10px;
   background-color: #48cae4;
-  height: 30px;
+  height: 30px; 
+  
 }
+
+
+
 
 .active-remained:before {
   content: '1.75 L';
@@ -196,13 +213,21 @@
 }
 
 .active-8:before {
-  content: '100%';
+  content: 'Well done!';
   height: 300px;
+
 }
 
 .active-remained8:before {
+  
 }
 .active-remained8 {
   color: #48cae4;
   background-color: #48cae4;
 }
+
+
+.nullL::before {
+  content: "2 L";
+}
+
